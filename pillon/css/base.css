@@ -1,0 +1,47 @@
+html,body,div,ul,ol,li,span,i,em,p,li,dl,dt,dd,input,textarea,form,img,h1,h2,h3,h4,h5,h6,table,tr,td{
+	margin:0;
+	padding: 0;
+	outline: none;
+}
+body{
+	font-family:"微软雅黑","Arial","Simsun","verdana";;
+	font-size: 12px;
+	color: #1A1A1A;
+	-webkit-text-size-adjust:100%;
+	background-color: #f4eee0;
+
+}
+/* 重设 HTML5 标签*/
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+b{font-weight: normal;}
+ul,li{list-style: none;}
+table,tr,td,img,input{border:0 none;}
+table{border-collapse: collapse;}
+em,i{font-style: normal;}
+a{
+	text-decoration: none;
+	color: #333333;
+}
+a:hover{
+	color: #0180cd;
+}
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+/*.clearfix:after{zoom:1;}*/
+.clear{clear: both;}
+.lf{float: left;}
+.rt{float: right;}
+/*内容*/
+.w920{width: 920px;margin:0 auto;}
+.w1000{width:1000px;}
+
