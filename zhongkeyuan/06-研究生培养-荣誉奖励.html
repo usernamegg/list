@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/css.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery1.42.min.js" type="text/javascript" language="javascript"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" src="js/own.js"></script>
+<script src="js/placeholderfriend.js" type="text/javascript" language="javascript"></script>
+</head>
+
+<body>
+
+
+<div class="header">
+	<div class="wp">
+    		<div class="top">
+        	<span class="top_lef">中国科学院计算技术研究所</span>
+            <div class="top_rig">
+            	<a href="#">主页</a>
+                <span>|</span>
+                <a href="#">登录</a>
+                <span>|</span>
+                <a href="#">English</a>
+                
+                	<input type="text" placeholder="搜索关键字" />
+                
+            </div>
+        </div>
+        <div class="header_img"><img src="images/666.png" /></div>
+       
+    </div>
+    	<div class="bgcolor">
+         <div class="nav apple">
+                <ul>
+                    <li><a href="中国科学院计算技术研究所v3.html">首页</a></li>
+                    <li><a href="02-实验室简介.html" class="jianjie">实验室简介</a></li>
+                    <li><a href="03-科学研究  科研成果3.html">科学研究</a></li>
+                    <li><a href="04-论文发表.html">论文发表 </a></li>
+                    <li><a href="05-研究人员.html">研究人员 </a></li>
+                    <li><a href="06-研究生培养.html">研究生培养</a></li>
+                    <li><a href="07-资源-数据库.html">数据库 </a></li>
+                    <li><a href="07-新闻动态.html">新闻动态</a></li>
+                </ul>
+            </div>
+            </div>
+</div>
+ <!--内容-->  
+ <div class="header2 clear">
+ 	<div class="wp add">
+    	
+        	<h2 class="position">您所在的位置 / 实验室简介</h2>
+            <div class="con_left2">
+            	<dl>
+                	<dd class="act2"><a href="#">研  究  生  培  养</a></dd>
+                </dl>
+                
+                
+               <div class="sideMenu" style="margin:0 auto">
+                    <h3><em></em><a href="#">导师名单</a></h3>
+                    <ul class="nav2">
+                        <li><a href="#">博导</a>
+                        <dl class="nav_dl">
+                                 <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                        	</dl>
+                        </li>
+                        <li><a href="#">硕导</a>
+                        <dl class="nav_dl">
+                                 <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                        	</dl>
+                        </li>
+                   
+           			 
+                  </ul> 
+                  
+                   <h3><em></em><a href="#">学生名单</a></h3>
+                    <ul>
+                        <li><a href="#">博士生</a>
+                        	<dl class="nav_dl">
+                                 <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                        	</dl>
+                        </li>
+                        <li><a href="#">硕士生</a></li>
+                   <li><a href="#">客座</a>
+                   <dl class="nav_dl">
+                                 <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                                <dt><a href="#">人脸组</a></dd>
+                        	</dl>
+                   </li>
+           			 
+                  </ul> 
+                    <h2><a href="#">已毕业学生名单</a></h2>
+                      <h2><a href="#">荣誉奖励</a></h2>
+                        <h2><a href="#">招生信息</a></h2>
+
+		</div><!-- sideMenu End -->
+        
+        <script>
+ 
+ 	$(function(){
+	$(".nav2 li").hover(
+	  function(){
+		  $(".nav_dl",this).stop(false,true);
+		  $(".nav_dl",this).slideDown(200);
+		  },
+	  function(){
+		  $(".nav_dl",this).stop(false,true);
+		  $(".nav_dl",this).slideUp(200);
+		  }
+	)
+		
+		})
+ </script>
+		<script type="text/javascript">
+			jQuery(".sideMenu").slide({
+				titCell:"h3", //鼠标触发对象
+				targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:150, //鼠标延迟触发时间（默认150）
+				defaultPlay:true,//默认是否执行效果（默认true）
+				returnDefault:true //鼠标从.sideMen移走后返回默认状态（默认false）
+				});
+		</script>
+
+            </div>
+            <div class="con_right2 con_left3">
+            	<h5 class="shou">荣誉奖励</h5>
+                <div class="most">
+                	<p>为了表彰和奖励“姚班”学生在德、智、体、美、劳等全方面的优异表现，特别是在学习和科研上取得的优异成绩和突出成果，姚先生从自己的科研经费中拨出专款专门设立了“姚奖学金”。 
+该奖项在每个学年末，对“姚班”三年级的优秀学生颁发，依据参评学生的成绩和其他学术、活动表现，共设立一等奖1名，二等奖2名，三等奖3名，优胜奖若干名。
+“姚奖学金”从2009年开始颁发。</p>
+         		
+                <ul class="honor">
+                	<li><a href="#"><span class="one">» 2015-2016学年交叉信息院姚班荣誉和奖学金获奖名单（20161019）</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2016-09-23]» 清华大学交叉信息研究院关于2015-2016学年度本科生荣誉与奖学金评定方案</span><span></span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    <li><a href="#"><span class="one">» [2014-07-07]» 2014年姚奖学金(Yao Award)获奖名单公示</span><span class="date">[2016-10-19]</span></a></li>
+                    
+                </ul>
+                
+                <div class="page page3 clear">
+                       		<a href="#">首页</a>
+                            <a href="#">21</a>
+                            <a href="#"><</a>
+                            <a href="#" class="acte">1</a>
+                           	<a href="#">></a>
+                            <a href="#">末页</a>
+                       </div>
+                
+                </div>
+               
+         </div>
+         
+         <div class="clear bar">
+        	
+            <div class="last lastjia clear">
+            	<div class="last1">
+                	<h5>视觉信息学习和处理组</h5>
+                    <ul class="first">
+                    	<li>单位地址：北京海淀区中关村科学院南路6号</li>
+                        <li>通信地址：北京2704信箱 邮编：100190</li>
+                        <li>联系电话：62601166</li>
+                        <li>Email：xuanchuanban@ict.ac.cn</li>
+                    </ul>
+                </div>
+                <div class="last1">
+                	<h6>相关链接</h6>
+                    <ul class="two">
+                    	<li>ITCS理论计算机科学研究中心</li>
+                        <li>CQI量子信息中心  </li>
+                        <li>香港中文大学理论计算机科学研究中心</li>
+                        <li>量子信息联合中心 </li>
+                    </ul>
+                </div>
+                <div class="last2"><img src="images/1_18.png" /></div>
+            </div>
+        </div>
+        <div class="foot">版权所有 @ 中科院计算所视觉信息处理与学习组  京ICP备05002829号　京公网安备1101080060号</div>
+         
+    </div>
+    <!--foot-->
+ 
+ </div>
+ 
+</body>
+
+</html>
