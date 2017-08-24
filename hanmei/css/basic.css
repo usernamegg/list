@@ -1,0 +1,112 @@
+/**
+NAME: Basic CSS公共层
+DES:代码质量,代码精简,兼容性
+开拖拉机,开飞机
+土路,高速公路
+
+Author:马珊
+Date: 2015年10月5日
+QQ: 1769879040
+SEX:女
+**/
+a{color:#000000;border:0;text-decoration:none;}
+a:hover{color:#b32317;}
+ul{list-style:none;margin:0;padding:0;}
+img{border:0;}
+
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {
+	margin: 0;
+	padding: 0;
+	color:#000;
+}
+body{ font:12px/21px '微软雅黑'; text-align:center; _font-family:'微软雅黑' !important;color:#FFF;}
+em,i{ font-style:normal;}
+#wrap{ text-align:left;}
+ul{list-style:none;}
+a{ text-decoration:none;}
+img{ border:0 none;}
+table{ border-collapse:collapse;}
+.fzs{font-family:'宋体';}
+.fzw{font-family:'微软雅黑';}
+.fzfz{font-family:'fzzt';font-weight:normal;}
+.w1200{ width:1200px; margin:0 auto;	overflow:hidden;
+}
+.w1600{width:1600px;margin:0 auto;	overflow:hidden;
+}
+.clearfix{zoom:1;}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:"";}
+.clearfix:after{clear:both;}
+
+
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.clear{clear:both;}
+
+/*外边距*/
+.mt2{margin-top:2px;}
+.mt5{margin-top:5px;}
+.mt7{margin-top:7px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.mt35{margin-top:35px;}
+.mt40{margin-top:40px;}
+.mt45{margin-top:45px;}
+.mt50{margin-top:50px;}
+.mt155{margin-top:155px;}
+.ml0{margin-left:0px !important;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml100{margin-left:100px;}
+.ml30{margin-left:30px;}
+.ml35{margin-left:35px;}
+.ml40{margin-left:40px;}
+.ml45{margin-left:45px;}
+.ml50{margin-left:50px;}
+.ml65{margin-left:80px;}
+
+/*文字居中*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+
+
+/*display:block*/
+
+.disBlock{ display:block;}
+
+/*font-size*/
+.ft14{font-size:14px;}
+
+/*line23*/
+.line23{ line-height:23px;}
+
+/*边框去除*/
+.borderNone{ border:0 none !important;}
+
+/*字体加粗*/
+
+.ftW{ font-weight:bold;}
+
+/*ft0*/
+.ft0{font-size:0px !important;}
+
+.bknone{ background:none !important;}
+.border_dr{ border-right:1px dotted #e8e8e7;}
+.border_db{ border-bottom:1px dotted #e8e8e7;}
+.border_dt{ border-top:1px dotted #e8e8e7;}
+.border_dl{ border-left:1px dotted #e8e8e7;}
+.border_r{ border-right:1px solid #e8e8e7;}
+.border_b{ border-bottom:1px solid #e8e8e7;}
+.border_t{ border-top:1px solid #e8e8e7;}
+.border_l{ border-left:1px solid #e8e8e7;}
+@font-face {
+  font-family: 'fzzt';   /*字体名称*/
+  src: url(../font/fzjhzt.ttf)       /*字体源文件*/
+}
+ 
