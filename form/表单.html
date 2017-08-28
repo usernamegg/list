@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<script type="text/javascript" src="jquery.1.10.2.js"></script>
+	<style type="text/css">
+		label{ display: inline-block; text-align: right; padding: 0px 10px; margin-right: 10px; width: 65px; }
+		div{ margin: 10px auto; }
+		.submit input{ padding: 5px; margin-left: 100px; }
+		span{ color: red; display: none; }
+	</style>
+</head>
+<body>
+	<form action="reg.php" method="get">
+		<p>用户名</p>
+		<p>
+			<input type="text" name="user" class="auth">
+			<span></span>
+		</p>
+		<p>密码</p>
+		<p>
+			<input type="password" name="password" class="auth">
+			<span></span>
+		</p>
+		<p>确认密码</p>
+		<p>
+			<input type="password" name="repassword" class="auth">
+			<span></span>
+		</p>
+		<p>邮箱</p>
+		<p>
+			<input type="email" name="email" class="auth">
+			<span></span>
+		</p>
+		<p>电话</p>
+		<p>
+			<input type="text" name="phone" class="auth">
+			<span></span>
+		</p>
+		<p>
+			<input type="submit" value="ok">
+			
+		</p>
+
+	</form>
+</body>
+		<script type="text/javascript">
+		$(".auth").data({"s":0});
+		$("input[name='user']").blur(function(){
+			var val=$(this).val();
+			if(val.length==0){
+				$(this).next().html("不能为空").show();
+				$(".auth").data({"s":0});
+			}else if(0<val.length&&val.length<6){
+				$(this).next().html("密码长度至少6位").show();
+				$(".auth").data({"s":0});
+			}else{
+				$(this).next().hide();
+				$(".auth").data({"s":1});
+			}
+
+		});
+
+		$("input[name='password']").blur(function(){
+			var val=$(this).val();
+			if(val.length==0){
+				$(this).next().html("不能为空").show();
+				$(".auth").data({"s":0});
+			}else if(val.length<8){
+				$(this).next().html("密码长度至少8位").show();
+				$(".auth").data({"s":0});
+			}else{
+				$(this).next().hide();
+				$(".auth").data({"s":1});
+			}
+
+		});
+
+		$("input[name='repassword']").blur(function(){
+			var val=$(this).val();
+			var val2=$("input[name='password']").val();
+			if(val.length==0){
+				$(this).next().html("不能为空").show();
+				$(".auth").data({"s":0});
+			}else if(val!==val2){
+				$(this).next().html("两次密码不一致").show();
+				$(".auth").data({"s":0});
+			}else{
+				$(this).next().hide();
+				$(".auth").data({"s":1});
+			}
+
+		});
+
+		$("input[name='email']").blur(function(){
+			var equal=/^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$ /i
+			var val=$(this).val();
+			if(val.length==0){
+				$(this).next().html("不能为空").show();
+				$(".auth").data({"s":0});
+			}
+			
+			else if(!val.match(equal)){
+				$(this).next().html("不匹配").show();
+				$(".auth").data({"s":0});
+			}else{
+				$(this).next().hide();
+				$(".auth").data({"s":1});
+			}
+
+		});
+		
+				 /** 验证固话号码
+				 * 
+				 * @param telephone
+				 * @return
+				 *
+				public static boolean checkTelephone(String telephone) {
+				String regex = "^(0\\d{2}-\\d{8}(-\\d{1,4})?)|(0\\d{3}-\\d{7,8}(-\\d{1,4})?)$";
+				return check(telephone, regex);
+				}*/
+
+		$("input[name='phone']").blur(function(){
+			var rule=/^1[34578]\d{9}$/
+			var val=$(this).val();
+		if(val.length==0){
+				$(this).next().html("不能为空").show();
+				$(".auth").data({"s":0});
+			}
+			else if(!val.match(rule)){
+				$(this).next().html("电话格式不正确").show();
+				$(".auth").data({"s":0});
+			}else{
+				$(this).next().hide();
+				$(".auth").data({"s":1});
+			}
+
+		});
+
+		// $(":submit").click(function(){})
+		// 或者
+		
+		$("form").submit(function(){
+			$(".auth").blur();
+			total=0;
+			$(".auth").each(function(){
+				total+=$(this).data("s");
+			});
+			if(total!=5){
+				return false;
+			}
+
+			
+		});
+		</script>
+</html>

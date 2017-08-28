@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.1.10.2.js"></script>
+</head>
+<body>
+	<form action="" method="">
+		<p>兴趣爱好</p>
+		<p>
+			<label for="">足球</label>
+			<input type="checkbox" name="" id="">
+		</p>
+		<p>
+			<label for="">蓝球</label>
+			<input type="checkbox" name="" id="">
+		</p>
+		<p>
+			<label for="">羽毛球</label>
+			<input type="checkbox" name="" id="">
+		</p>
+		<p>
+			<label for="">乒乓球</label>
+			<input type="checkbox" name="" id="">
+		</p>
+		<p>
+			<label for="">排球</label>
+			<input type="checkbox" name="" id="">
+		</p>
+
+		<button type="button" id="all">全选</button>
+		<button type="button" id="notall">全不选</button>
+		<button type="button" id="unall">反选</button>
+		<button type="button" id="ok">ok</button>
+
+	</form>
+	<div class="infor">
+		
+	</div>
+</body>
+<script type="text/javascript">
+     $("#all").click(function(){
+     		$(":checkbox").attr({"checked":true});
+
+     });
+
+     $("#notall").click(function(){
+     		$(":checkbox").attr({"checked":false});
+     });
+
+     $("#unall").click(function(){
+     		$(":checkbox").each(function(){
+     			this.checked=!this.checked
+     		});
+     });
+
+     $("#ok").click(function(){
+     		$(":checked").parent().appendTo(".infor");
+     });
+</script>
+</html>
